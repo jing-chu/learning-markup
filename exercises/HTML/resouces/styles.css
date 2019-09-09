@@ -1,0 +1,31 @@
+html{
+    font-family: sans-serif
+  }
+  
+  body {
+    
+    margin: 50px;
+  }
+  
+  span {
+    font-family: monospace;
+    background-color: rgb(217, 235, 229)
+  }
+  
+  .note {
+    font-style: italic
+  }
+  
+  table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
