@@ -29,3 +29,8 @@ html{
   th, td {
     padding: 10px;
   }
+
+  .ul-checklist{
+    padding: 0px;
+    list-style: none
+  }
