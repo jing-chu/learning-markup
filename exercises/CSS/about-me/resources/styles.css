@@ -21,6 +21,34 @@ body {
     
 }
 
+.Nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .Nav-bar > li {
+    float: left;
+  }
+  
+  .Nav-bar>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .Nav-bar>li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color:#708090;
+  }
+
 .selfie {
     border-radius: 50%;
     width: 150px;
@@ -120,4 +148,9 @@ p{
 
 .vl>li{
     display: inline;
+}
+
+footer{
+    padding: 70px 0;
+    text-align: center;
 }
