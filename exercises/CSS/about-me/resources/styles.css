@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(background-css.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.selfie {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.selfie:hover{
+    filter: blur(2px);
+    transform: scale(1.5);
+}
+
+#pic .text{
+    position: relative;
+    bottom:50px;
+    left:50px;
+    visibility:hidden;
+}
+
+#pic:hover .text {
+    visibility:visible;
+    }
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    font: bold
+}
+
+   tr:nth-child(even) {
+    background-color: #DCDCDC
+  }
+
+   table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid gray;
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+  td::first-letter {
+      font-weight:bold;
+  }
+
+  td:hover {
+    background-color: darkgray; 
+  }
+
+  footer{
+      height: 150px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+
+
+.linkedin:hover {
+    color:#0077B5
+}
+
+.github:hover {
+    color:#211F1F
+}
+
+.stackoverflow:hover {
+    color: #F47F24
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 40px;
+    margin: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.vl {
+    display: flex;
+    text-align: center; 
+    width: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-left: 1px solid black;
+    height: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vl>li{
+    display: inline;
+}
