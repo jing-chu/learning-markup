@@ -1,0 +1,7 @@
+// here we declare all functions
+
+// CALCULATE REM SIZE
+@function calcRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}

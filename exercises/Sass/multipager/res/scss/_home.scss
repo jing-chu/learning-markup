@@ -1,0 +1,51 @@
+.home-bg{
+    background: url("../img/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.home-text .left-text{
+font-size: 18px;
+color: $main-text-after;
+padding: 30px;
+padding-left: 30px;
+float: left;
+
+
+}
+.home-text .center-text{
+    font-size: 18px;
+    color: $main-text;
+    padding: 30px;
+    padding-left: 30px;
+    float: left;
+    
+    
+
+}
+.home-text .right-text{
+    font-size: 18px;
+    color: $main-text;
+    float: left;
+    padding: 30px;
+}
+.text-cornerleft{
+    color: $white-color;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.text-boxright {
+    padding: 9px;
+    float: right;
+    border: 1px solid $main-text;
+    background-color: $bg-color-box;
+    color: $main-text;
+    margin-top: 15px;
+    margin-right: 15px;
+    
+}
+
+

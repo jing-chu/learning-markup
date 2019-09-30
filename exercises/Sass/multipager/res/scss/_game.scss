@@ -1,0 +1,94 @@
+.game-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../mountain.jpg);
+    display:flex;
+    flex-direction: column;
+    padding-left: 2rem;
+
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:60vw;
+    padding: 2rem;
+}
+
+.icons{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    border-bottom: 1px solid $sidebar-text;
+    .icon{
+        width: 20vw;
+        text-align: center;
+        padding:1rem 0;
+       
+        p{
+            color:$main-text;
+            padding:1rem 0;
+        }
+        h2{
+            color:$main-text;
+        }
+    }
+}
+
+.menu-item-3{
+    border-right: 1px solid $main-text;
+    padding-right:2rem;
+}
+
+.game-text{
+    color:$main-text-after;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: bold;
+    width:20vw;
+    line-height: 1.5rem;
+    border-bottom: 1px solid $sidebar-text;
+}
+
+.choice-box{
+    display:flex;
+    flex-direction: column;
+    padding:1rem 0;
+}
+
+.picks{
+    padding:0.5rem;
+    color:$main-text;
+    font-weight: bold;
+}
+
+.checkmark>p{
+    font-size: 0.8rem;
+    padding-left:1rem;
+}
+
+.confirm-btn{
+    text-align: center;
+    border: 1px solid $main-text;
+    width: 15vw;
+    height:2.5rem;
+    padding: 10px;
+    margin: 0 auto;
+    
+    .close-button{
+        border: 2px solid $main-text;
+        width:2rem;
+        font-size:1rem;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $sidebar-text;
+        padding:0.5rem;
+        
+    }
+    .button{
+        color:$sidebar-text;
+        border: 2px solid $blue-text;
+        padding:0.5rem;
+        background-color: $btn-background;
+        
+    }
+}

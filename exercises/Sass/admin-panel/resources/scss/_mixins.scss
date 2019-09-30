@@ -1,0 +1,23 @@
+@mixin info-box {
+    display:flex;
+    color:$white;
+}
+@mixin info-tag{
+    font-size: 3vw;
+    color: $white;
+    text-align: center;
+    padding-top:30px;
+    width: 30%;
+    height: auto;
+    background:rgba(0,0,0,0.2);
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction:column; 
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction:row; 
+}

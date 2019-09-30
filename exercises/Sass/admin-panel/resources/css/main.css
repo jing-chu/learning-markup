@@ -1,0 +1,262 @@
+.info-box-container {
+  width: 70%;
+  padding-left: 10px;
+}
+.info-box-container .progress-bar {
+  height: 2px;
+  width: 100%;
+  background: #555;
+  margin: 10px 0;
+}
+.info-box-container .progress-bar span {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+}
+.info-box-container .progress-description {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+}
+
+header {
+  grid-column: 1/3;
+  border: 1px solid red;
+}
+
+nav {
+  grid-row: 2/4;
+  border: 1px solid red;
+}
+
+.main-body {
+  grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  border: 1px solid red;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.cpu-traffic {
+  border: 1px solid blue;
+}
+
+.likes {
+  border: 1px solid blue;
+}
+
+.sales {
+  border: 1px solid blue;
+}
+
+.new-members {
+  border: 1px solid blue;
+}
+
+.monthly-recap-report {
+  grid-column: 1/5;
+  border: 1px solid blue;
+}
+
+.visitors-report {
+  grid-area: 3/1/7/3;
+  border: 1px solid blue;
+}
+
+.inventory {
+  grid-column: 3/5;
+  background-color: #f39c12;
+  display: flex;
+  color: #fff;
+}
+
+.inventory-tag, .mentions-tag, .downloads-tag, .direct-messages-tag {
+  font-size: 3vw;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  width: 30%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#progress-bar1 {
+  height: 2px;
+  width: 100%;
+  background: #555;
+  padding: 0px;
+}
+#progress-bar1 span {
+  display: block;
+  height: 2px;
+  background-color: #fff;
+}
+
+.mentions {
+  grid-column: 3/5;
+  background-color: #00a65a;
+  display: flex;
+  color: #fff;
+}
+
+.downloads {
+  grid-column: 3/5;
+  background-color: #dd4b39;
+  display: flex;
+  color: #fff;
+}
+
+.direct-messages {
+  grid-column: 3/5;
+  background-color: #00c0ef;
+  display: flex;
+  color: #fff;
+}
+
+.direct-chat, .ap, .sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message-box {
+  height: 250px;
+  overflow: auto;
+}
+
+.form-control {
+  width: 80%;
+  height: 30px;
+}
+
+.input-group-btn, .btn-send {
+  height: 30px;
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.ap .name-time {
+  width: 100%;
+}
+.ap .name-time .ap-name {
+  float: left;
+  font-size: 12px;
+  text-align: center;
+}
+.ap .name-time .time-right {
+  float: right;
+  color: #d2d6de;
+  font: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.ap .ap-message {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ap .ap-message img {
+  border-radius: 50%;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+.ap .ap-message .ap-text {
+  width: 80%;
+  background-color: #d2d6de;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sb .name-time {
+  width: 100%;
+}
+.sb .name-time .sb-name {
+  float: right;
+  font-size: 12px;
+  text-align: center;
+}
+.sb .name-time .time-left {
+  float: left;
+  color: #d2d6de;
+  font: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.sb .sb-message {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sb .sb-message img {
+  border-radius: 50%;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+.sb .sb-message .sb-text {
+  width: 80%;
+  background-color: #f39c12;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 10px;
+}
+
+.latest-members {
+  border: 1px solid blue;
+}
+
+.browser-usage {
+  grid-area: 7/3/9/5;
+  border: 1px solid blue;
+}
+
+.latest-orders {
+  grid-area: 8/1/10/3;
+  border: 1px solid blue;
+}
+
+.recently-added-products {
+  grid-column: 3/5;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.samsungtv {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  grid-column: 2/3;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,230 @@
+.store-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.menu-btn{
+    display:flex;
+    height: 4rem;
+    background-color: $black;
+    .menu{
+        width: 70%;
+        display:flex;
+        justify-content: space-evenly;
+        padding-top:1rem;
+    }
+    .three-btns{
+        width:30%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+}
+
+.menu-item{
+    color:$main-text;
+    font-weight:bold;
+    text-align:center;
+    font-size:0.9rem;
+}
+
+.btn{
+    height:2rem;
+    width:10rem;
+    border:2px solid $main-text;
+    background-color:$btn-background;
+    color:$main-text;
+    margin-top:1rem;
+    font-size:1rem;
+    font-weight:bold;
+}
+
+.btn-round{
+    height:2rem;
+    border-radius: 50%;
+    border:2px solid $main-text;
+    background-color:$btn-background;
+    color:$main-text;
+    margin-top:1rem;
+}
+
+.gallery{
+    display:grid;
+    height:auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1rem;
+    background-color: $fake-background;
+    padding: 1rem;
+}
+
+.pic-1{
+    grid-area: 1 / 1 / 3 / 4;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../pic1.png);
+    background-size: cover;
+    height:65vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:1rem;
+    border:1px solid $sidebar-text;
+}
+
+.game-info{
+    p{
+        color:$main-text;
+        font-weight: bolder;
+    }
+    h1,span{
+        color:$main-text-after;
+        padding-bottom: 1rem;
+    }
+    padding-bottom: 1rem;
+}
+
+.more-game-button{
+    .btn-square{
+        width:1.5rem;
+        height:1.5rem;
+        background-color: $btn-background;
+        border:1px solid $sidebar-text;
+        color:$sidebar-text;
+        float: right;
+        margin:0 0.4rem;
+    }
+    .btn-active{
+        border:2px solid $main-text;
+        color:$main-text-after;
+        font-weight: bold;
+    }
+}
+
+.pic-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../pic2.png);
+    position:relative;
+    background-size: cover;
+    width:15vw;
+    height:15vw;
+    border:1px solid $sidebar-text;
+}
+
+.wardcup{
+    position:absolute;
+    top:80px;
+    left:50px;
+    width:3rem;
+    height:3rem;
+    border: 2px solid $main-text-after;
+    
+}
+
+.blueward{
+    position:absolute;
+    top:80px;
+    left:110px;
+    width:3rem;
+    height:3rem;
+    border: 2px solid $main-text-after;
+
+}
+
+.pic-info{
+    position:absolute;
+    top:130px;
+    left:30px;
+    color:$main-text-after;
+    font-weight: bolder;
+}
+
+.pic-no{
+    position:absolute;
+    top:170px;
+    left:90px;
+    color:$main-text;
+    font-weight: bolder;
+}
+
+.pic-3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../pic3.png);
+    position:relative;
+    background-size: cover;
+    width:15vw;
+    height:15vw;
+    border:1px solid $sidebar-text;
+}
+
+.pic-4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../pic4.png);
+    position:relative;
+    background-size: cover;
+    width:15vw;
+    height:15vw;
+    border:1px solid $sidebar-text;
+}
+
+.pic-5
+{
+    background-image:url(../pic5.png);
+    background-size: cover;
+    width:15vw;
+    height:15vw;
+    border:1px solid $sidebar-text;
+}
+
+.top-sellers{
+    grid-area: 3 / 1 / 4 / 6;
+    color: $main-text;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pic-7{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../pic7.png);
+    height:26vh;
+    position:relative;
+    background-size: cover;
+    border:1px solid $sidebar-text;
+}
+
+.pic-8{
+    background-image:url(../pic8.png);
+    position:relative;
+    background-size: cover;
+    border:1px solid $sidebar-text;
+}
+
+.pic-9{
+    background-image:url(../pic9.png);
+    background-size: cover;
+    border:1px solid $sidebar-text;
+}
+
+.pic-10{
+    background-image:url(../pic4.png);
+    position:relative;
+    background-size: cover;
+    border:1px solid $sidebar-text;
+}
+
+.pic-11{
+    background-image: url(../pic5.png);
+    background-size: cover;
+    border:1px solid $sidebar-text;
+}
+
+
+.red-flag{
+    position:absolute;
+    top:0;
+    left:5px;
+    height:2.5rem;
+    width:2rem;
+    background-color:$fake-flag;
+    border:2px solid $main-text;
+    .fa-clock{
+        color: $main-text-after;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+

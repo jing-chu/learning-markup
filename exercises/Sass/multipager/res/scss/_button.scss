@@ -1,0 +1,12 @@
+.button {
+    padding: 8px 15px;
+    background: #1e2328;
+    color: $main-text;
+    text-transform: uppercase;
+    border: 2px solid #ba9137;
+    
+    &.color2 {
+        color: #5c5b57;
+        border-color: #5c5b57;
+    }
+}

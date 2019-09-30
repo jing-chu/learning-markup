@@ -1,0 +1,77 @@
+.cover {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 250px;
+    bottom: 0;
+    padding: 0 25px;
+    background-image: url("../img/teemo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.cover::after {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 250px;
+    bottom: 0;
+    content: "";
+    background: linear-gradient(to right, rgba(#000000, 0.8), rgba(#000000, 0.2));
+    z-index: -1;
+}
+
+.champion-name {
+    margin: 25px 0;
+    position: relative;
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 80px;
+    }
+    
+    div {
+        padding: 8px 0 0 100px;
+        color: #f0e6d2;
+        text-transform: uppercase;
+    }
+    
+    .name {
+        font-size: calcRem(32px);
+    }
+    
+    .title {
+        color: #979485;
+        font-size: calcRem(18px);
+    }
+}
+
+.champion-stats {
+    margin: 25px 0px;
+    width: 450px;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    p {
+        margin: 10px 0;
+        color: #8a877b;
+        font-size: calcRem(18px);
+        line-height: 1.2;
+    }
+}
+
+.champion-buttons {
+    padding: 10px 0 0 0;
+    
+    a {
+        margin: 0 10px 0 0;
+    }
+}

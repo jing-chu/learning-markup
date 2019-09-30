@@ -1,0 +1,246 @@
+@import 'variables';
+@import "mixins";
+@import "components";
+@import "reset";
+
+body{
+    display: grid;
+
+}
+
+header{
+    grid-column: 1 / 3;
+    border: 1px solid red;
+}
+
+nav{
+    grid-row: 2 / 4;
+    border: 1px solid red;
+}
+
+.main-body{
+    grid-area: 2 / 2 / 3 / 3;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    border: 1px solid red;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.cpu-traffic{
+    border: 1px solid blue;
+}
+
+.likes{
+    border: 1px solid blue;
+}
+
+.sales{
+    border: 1px solid blue;
+}
+
+.new-members{
+    border: 1px solid blue;
+}
+
+.monthly-recap-report{
+    grid-column: 1 / 5;
+    border: 1px solid blue;
+}
+
+.visitors-report{
+    grid-area: 3 / 1 / 7 / 3;
+    border: 1px solid blue;
+}
+
+.inventory{
+    grid-column: 3 / 5;
+    background-color: $yellow;
+    @include info-box;
+}
+
+.inventory-tag, .mentions-tag, .downloads-tag, .direct-messages-tag {
+    @include info-tag
+}
+
+
+#progress-bar1{
+    height: 2px;  
+    width:100%;
+	background: #555;
+    padding: 0px;
+    & span{
+        display: block;
+        height: 2px;
+        background-color: $white;
+    }
+}
+
+.mentions{
+    grid-column: 3 / 5;
+    background-color: $green;
+    @include info-box;
+}
+
+.downloads{
+    grid-column: 3 / 5;
+    background-color:$red;
+    @include info-box;
+}
+
+.direct-messages{
+    grid-column: 3 / 5;
+    background-color: $aqua;
+    @include info-box;
+}
+
+.direct-chat, .ap, .sb {
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+.message-box {
+    height:250px;
+    overflow: auto;
+}
+
+.form-control{
+    width:80%;
+    height:30px;
+}
+
+.input-group-btn, .btn-send{
+    height:30px;
+    background-color: $yellow;
+    color:$white;
+
+}
+
+
+.ap{
+    
+    .name-time{
+        width:100%;
+        .ap-name{
+            float: left;
+            font-size: 12px;
+            text-align: center;
+         }
+        .time-right{
+            float: right;
+            color:$lightgray;
+            font:bold;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.ap{
+   .ap-message{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        img{
+            border-radius: 50%;
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+        .ap-text{
+            width:80%;
+            background-color:$lightgray;
+            margin: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+}
+
+
+.sb {
+    .name-time{
+        width:100%;
+        .sb-name{
+            float: right;
+            font-size: 12px;
+            text-align: center;
+        }
+        .time-left{
+            float: left;
+            color:$lightgray;
+            font:bold;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.sb{
+    .sb-message{
+         width:100%;
+         display:flex;
+         flex-direction: row;
+         justify-content: space-around;
+         img{
+             border-radius: 50%;
+             float: left;
+             width: 40px;
+             height: 40px;
+        }
+         .sb-text{
+             width:80%;
+             background-color:$yellow;
+             margin: 5px;
+             border-radius: 5px;
+             color:$white;
+             text-align: center;
+             padding-top: 5px;
+        }
+    }
+ }
+
+
+.input-group {
+     width:100%;
+     display:flex;
+     flex-direction: row;
+     justify-content: start;
+     margin-top: 10px;
+}
+
+.latest-members{
+    border: 1px solid blue;
+}
+
+.browser-usage{
+    grid-area: 7 / 3 / 9 / 5;
+    border: 1px solid blue;
+}
+
+.latest-orders{
+    grid-area: 8 / 1 / 10 / 3;
+    border: 1px solid blue;
+
+}
+
+.recently-added-products{
+    grid-column: 3 / 5 ;
+    border: 1px solid blue;
+    @include flex-column;
+}
+
+.samsungtv{
+    @include flex-row;
+
+}
+
+footer{
+    grid-column: 2 / 3;
+    border: 1px solid red;
+}

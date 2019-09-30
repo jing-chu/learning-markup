@@ -1,0 +1,30 @@
+// here we setup the base and reset elements
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Merriweather', serif;
+    font-size: calcRem(16px);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    border: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+    a {
+        display: inline-block;
+    }
+}
